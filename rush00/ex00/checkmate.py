@@ -18,7 +18,7 @@ def is_king_checked(board):
         print("error: The board must contain exactly one King")
         return
 
-    n = len(board)  # ขนาดของกระดาน (n x n)
+    n = len(board)  # ขนาดของกระดาน
 
     # หาตำแหน่งของกษัตริย์
     king_pos = None
@@ -59,5 +59,5 @@ def is_king_checked(board):
                 elif board[x][y] != '.':  # Has obstruction
                     break
 
-    # Safe
+
     print("Fail")
